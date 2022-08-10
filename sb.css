@@ -1,0 +1,106 @@
+.body {
+    margin: 0px;
+}
+.bigcont {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+.container {
+    display: block;
+    width: 20%;
+    height: 100vh;
+    background-color: brown;
+}
+.Hamburger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    gap: 10px;
+    box-shadow: 0px 0px 30px gray;
+}
+.bar {
+    margin-left: 5px;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+}
+
+.container:hover .bar:nth-of-type(2){
+    transform: translateZ(10px);
+    width: 1px;
+    height: 1px;
+    display: none;
+}
+.container:hover .bar:nth-of-type(1){
+    width: 34px;
+    transform-origin: 25%;
+    transform: rotate(45deg);
+    transition: 700ms;
+}
+.container:hover .bar:nth-of-type(3){
+    transform-origin: 25%;
+    width: 34px;
+    transform: rotate(-45deg);
+    transition: 700ms;
+}
+.txts {
+    color: white;
+    transform: translateX(0px);
+    transition: 300ms;
+    opacity: 0;
+}
+.w1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+.w2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+.w3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+.w1:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.w2:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.w3:hover {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+ .container:hover > .txts{
+    opacity: 1;
+    transform: translateX(100px);
+} 
