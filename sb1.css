@@ -1,0 +1,10 @@
+.bigcont {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.container {
+    width: 20%;
+    height: 100vh;
+    background-color: brown;
+}

@@ -28,22 +28,21 @@
     height: 2px;
     background-color: white;
 }
-
-.container:hover .bar:nth-of-type(2){
-    transform: translateZ(10px);
-    width: 1px;
-    height: 1px;
-    display: none;
+.Hamburger:hover .bar:nth-of-type(2){ 
+    transition: 1s;
+    width: 0px;
+    height: 0px;
+    transform: translateX(15px);
 }
-.container:hover .bar:nth-of-type(1){
-    width: 34px;
-    transform-origin: 25%;
+.Hamburger:hover .bar:nth-of-type(1){
+    width: 38px;
+    transform-origin: 4px 1.5px;
     transform: rotate(45deg);
     transition: 700ms;
 }
-.container:hover .bar:nth-of-type(3){
-    transform-origin: 25%;
-    width: 34px;
+.Hamburger:hover .bar:nth-of-type(3){
+    transform-origin: 4px 1.5px;
+    width: 38px;
     transform: rotate(-45deg);
     transition: 700ms;
 }
@@ -53,54 +52,90 @@
     transition: 300ms;
     opacity: 0;
 }
-.w1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    border-top: 2px solid brown;
-    border-bottom: 2px solid brown;
+.container:hover > .txts {
+    opacity: 1;
+    transform: translateX(100px);
 }
-.w2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    border-top: 2px solid brown;
-    border-bottom: 2px solid brown;
+.b1 {
+    position: relative;
+    bottom: 32px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 500ms;
 }
-.w3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    border-top: 2px solid brown;
-    border-bottom: 2px solid brown;
+.b2 {
+    position: relative;
+    bottom: 20px;
+    transform-origin: -100px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 500ms;
 }
-.w1:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+.b3 {
+    position: relative;
+    bottom: 32px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 500ms;
 }
-.w2:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+.b4 {
+    position: relative;
+    bottom: 20px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 500ms;
 }
-.w3:hover {
-    display: flex;
-    justify-content: center;
-    width: 80px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+.b5 {
+    position: relative;
+    bottom: 32px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 500ms;
 }
- .container:hover > .txts{
+.b6 {
+    position: relative;
+    bottom: 20px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: 500ms;
+}
+.w1:hover  ~ .b1{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.w1:hover  ~ .b2 {
+    opacity: 1;
+    transform: translateY(5px);
+}
+.w2:hover ~ .b3 {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.w2:hover ~ .b4 {
+    opacity: 1;
+    transform: translateY(5px);
+}
+.w3:hover ~ .b5 {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.w3:hover ~ .b6 {
+    opacity: 1;
+    transform: translateY(5px);
+}
+ .container:hover > .w1{
     opacity: 1;
     transform: translateX(100px);
 } 
