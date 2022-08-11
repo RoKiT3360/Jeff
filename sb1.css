@@ -51,20 +51,20 @@
     transform: translateX(100px);
     transition: 0.3s;
 }
-.checkbox:hover + .Hamburger :nth-child(1){
+.checkbox:checked + .Hamburger :nth-child(1){
     transition: 500ms;
     transform-origin: 4px 4px;
-    width: 36px;
+    width: 35px;
     transform: rotate(45deg);
 }
-.checkbox:hover + .Hamburger :nth-child(2) {
+.checkbox:checked + .Hamburger :nth-child(2) {
     width: 0px;
     height: 0px;
     transform: translateX(15px);
     transition: 500ms;
 }
-.checkbox:hover + .Hamburger :nth-child(3) {
-    width: 36px;
+.checkbox:checked + .Hamburger :nth-child(3) {
+    width: 35px;
     transform-origin: 4px -4px;
     transform: rotate(-45deg);
     transition: 500ms;
